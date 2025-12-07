@@ -2,6 +2,7 @@ class BlogApp {
   constructor() {
     this.posts = [];
     this.currentView = 'list';
+    this.contentCache = {};
     this.init();
   }
 
@@ -19,6 +20,24 @@ class BlogApp {
     } catch (error) {
       console.error('Error loading posts:', error);
       this.posts = [];
+    }
+  }
+
+  async preloadPost(slug) {
+    if (this.contentCache[slug]) {
+      return;
+    }
+
+    const post = this.posts.find(p => p.slug === slug);
+    if (!post) return;
+
+    try {
+      const response = await fetch(post.file);
+      const markdown = await response.text();
+      const html = marked.parse(markdown);
+      this.contentCache[slug] = html;
+    } catch (error) {
+      console.error('Error preloading post:', error);
     }
   }
 
@@ -66,7 +85,9 @@ class BlogApp {
     listContainer.innerHTML = this.posts
       .sort((a, b) => new Date(b.date) - new Date(a.date))
       .map(post => `
-        <div class="post-item" onclick="app.navigateToPost('${post.slug}')">
+        <div class="post-item"
+             onclick="app.navigateToPost('${post.slug}')"
+             onmouseover="app.preloadPost('${post.slug}')">
           <h2>${post.title}</h2>
           <p class="post-date">${new Date(post.date).toLocaleDateString()}</p>
           <p>${post.description}</p>
@@ -102,9 +123,17 @@ class BlogApp {
     `;
 
     try {
-      const response = await fetch(post.file);
-      const markdown = await response.text();
-      const html = marked.parse(markdown);
+      let html;
+
+      if (this.contentCache[slug]) {
+        html = this.contentCache[slug];
+      } else {
+        const response = await fetch(post.file);
+        const markdown = await response.text();
+        html = marked.parse(markdown);
+        this.contentCache[slug] = html;
+      }
+
       document.getElementById('post-content').innerHTML = html;
     } catch (error) {
       console.error('Error loading post:', error);
