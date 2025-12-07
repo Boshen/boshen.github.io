@@ -111,35 +111,43 @@ class BlogApp {
     }
 
     const container = document.getElementById('app');
-    container.innerHTML = `
-      <div class="back-button" onclick="app.goBack()">← Back to Posts</div>
-      <h1>${post.title}</h1>
-      <p class="post-date">${new Date(post.date).toLocaleDateString()}</p>
-      <div id="post-content" class="post-content">Loading...</div>
-      <p align="center">
-        <a href="https://github.com/sponsors/Boshen">
-          <img src="https://cdn.jsdelivr.net/gh/boshen/sponsors/sponsors.svg" alt="My sponsors" />
-        </a>
-      </p>
-    `;
 
-    try {
-      let html;
+    if (this.contentCache[slug]) {
+      container.innerHTML = `
+        <div class="back-button" onclick="app.goBack()">← Back to Posts</div>
+        <h1>${post.title}</h1>
+        <p class="post-date">${new Date(post.date).toLocaleDateString()}</p>
+        <div id="post-content" class="post-content">${this.contentCache[slug]}</div>
+        <p align="center">
+          <a href="https://github.com/sponsors/Boshen">
+            <img src="https://cdn.jsdelivr.net/gh/boshen/sponsors/sponsors.svg" alt="My sponsors" />
+          </a>
+        </p>
+      `;
+    } else {
+      container.innerHTML = `
+        <div class="back-button" onclick="app.goBack()">← Back to Posts</div>
+        <h1>${post.title}</h1>
+        <p class="post-date">${new Date(post.date).toLocaleDateString()}</p>
+        <div id="post-content" class="post-content"></div>
+        <p align="center">
+          <a href="https://github.com/sponsors/Boshen">
+            <img src="https://cdn.jsdelivr.net/gh/boshen/sponsors/sponsors.svg" alt="My sponsors" />
+          </a>
+        </p>
+      `;
 
-      if (this.contentCache[slug]) {
-        html = this.contentCache[slug];
-      } else {
+      try {
         const response = await fetch(post.file);
         const markdown = await response.text();
-        html = marked.parse(markdown);
+        const html = marked.parse(markdown);
         this.contentCache[slug] = html;
+        document.getElementById('post-content').innerHTML = html;
+      } catch (error) {
+        console.error('Error loading post:', error);
+        document.getElementById('post-content').innerHTML =
+          '<p>Error loading post content.</p>';
       }
-
-      document.getElementById('post-content').innerHTML = html;
-    } catch (error) {
-      console.error('Error loading post:', error);
-      document.getElementById('post-content').innerHTML =
-        '<p>Error loading post content.</p>';
     }
 
     this.currentView = 'detail';
