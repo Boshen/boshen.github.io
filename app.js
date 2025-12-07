@@ -48,6 +48,11 @@ class BlogApp {
     const container = document.getElementById('app');
     container.innerHTML = `
       <h1>Blog</h1>
+      <p align="center">
+        <a href="https://github.com/sponsors/Boshen">
+          <img src="https://cdn.jsdelivr.net/gh/boshen/sponsors/sponsors.svg" alt="My sponsors" />
+        </a>
+      </p>
       <div id="post-list"></div>
     `;
 
@@ -89,6 +94,11 @@ class BlogApp {
       <h1>${post.title}</h1>
       <p class="post-date">${new Date(post.date).toLocaleDateString()}</p>
       <div id="post-content" class="post-content">Loading...</div>
+      <p align="center">
+        <a href="https://github.com/sponsors/Boshen">
+          <img src="https://cdn.jsdelivr.net/gh/boshen/sponsors/sponsors.svg" alt="My sponsors" />
+        </a>
+      </p>
     `;
 
     try {
