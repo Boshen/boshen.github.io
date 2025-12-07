@@ -1,11 +1,11 @@
 {
   "posts": [
     {
-      "slug": "first-post",
-      "title": "My First Blog Post",
+      "slug": "js-ecosystem-burnout",
+      "title": "JS Ecosystem Burnout",
       "date": "2025-12-07",
-      "description": "Getting started with my new blog",
-      "file": "posts/first-post.md"
+      "description": "A timeline of JavaScript maintainer burnout from 2016-2025",
+      "file": "posts/js-ecosystem-burnout.md"
     }
   ]
 }
