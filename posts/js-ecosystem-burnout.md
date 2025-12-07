@@ -13,27 +13,23 @@ If my work has improved your development experience, your CI pipelines, your bui
 | Year | Person / Maintainer | Major Projects | Burnout / Step-Down Signal |
 |------|----------------------|----------------|------------------------------|
 | 2025 | [Matias Capeletto (patak)](https://github.com/patak-dev) | Vite, Vitest | ["Taking some time" — major step-back after intense OSS years](https://patak.dev/blog/update.html) |
-| 2025 | [Henry Zhu](https://github.com/hzoo) | Babel | [Continued discussions on burnout & sustainability](https://changelog.com/podcast/265) |
-| 2024 | [Anthony Fu](https://github.com/antfu) | Vue, Vite | [*Mental Health in Open Source* burnout reflection](https://antfu.me/posts/mental-health-in-open-source) |
-| 2024 | [Litepicker Maintainer](https://github.com/wakirin) | Litepicker | ["I can't maintain this anymore" → community fork](https://github.com/wakirin/Litepicker/issues/330) |
+| 2025 | [Henry Zhu](https://github.com/hzoo) | Babel | [Continued discussions on burnout & sustainability](https://changelog.com/podcast/296) |
+| 2024 | [Anthony Fu](https://github.com/antfu) | Vue, Vite | [Mental Health in Open Source burnout reflection](https://antfu.me/posts/mental-health-oss) |
 | 2024 | [Angular package maintainers](https://github.com/ebcoder) | ngx-filequake | ["I will no longer maintain this package."](https://www.npmjs.com/package/@ebcoder/ngx-filequake) |
-| 2024 | [Ken Wheeler](https://github.com/kenwheeler) | Spectacle, libs | [Public interview on stepping away from OSS](https://www.osohq.com/post/ken-wheeler-taking-a-break-from-open-source) |
-| 2023 | [Kent C. Dodds](https://github.com/kentcdodds) | Testing ecosystem | [*Open Source Stamina* — reduces involvement to avoid burnout](https://kentcdodds.com/blog/open-source-stamina) |
-| 2022 | [Dane Springmeyer](https://github.com/springmeyer) | node-pre-gyp | [Steps down as maintainer, requests new ownership](https://github.com/mapbox/node-pre-gyp/issues/624) |
-| 2022 | [Deepstream Maintainers](https://github.com/deepstreamIO) | deepstream.io | [Maintainer stepping down → project sunset](https://deepstream.io/blog/deepstream-sunsetting/) |
+| 2024 | [Ken Wheeler](https://github.com/kenwheeler) | Spectacle, libs | [Public interview on stepping away from OSS](https://dev.to/gitnation/ken-wheeler-taking-a-break-from-open-source-is-a-welcome-change-4ool) |
+| 2023 | [Kent C. Dodds](https://github.com/kentcdodds) | Testing ecosystem | [Open Source Stamina — reduces involvement to avoid burnout](https://kentcdodds.com/blog/open-source-stamina) |
+| 2022 | [Dane Springmeyer](https://github.com/springmeyer) | node-pre-gyp | [Announces he is stepping down and will no longer maintain the project](https://github.com/mapbox/node-pre-gyp/issues/657) |
 | 2021 | [Marak Squires](https://github.com/Marak) | faker.js, colors.js | [Protestware meltdown following long dissatisfaction](https://github.com/Marak/faker.js/issues/1046) |
-| 2021 | [Snowpack Team](https://github.com/snowpackjs) | Snowpack | [Project discontinued; maintainers discuss burnout pressures](https://www.snowpack.dev/posts/snowpack-is-dead-long-live-vite) |
-| 2020 | [Amish Shah](https://github.com/amishshah) | discord.js | [Steps down as owner of discord.js](https://gist.github.com/amishshah/4a0dbad8cab3a2e7eab1b1b20f4237c5) |
-| 2019 | [Artem Sapegin](https://github.com/sapegin) | react-styleguidist | [*Why I Quit Open Source*](https://sapegin.me/blog/quit-open-source/) |
-| 2019 | [Paul Armstrong](https://github.com/paularmstrong) | lint-staged | [Begins "Taking a break from OSS" series](https://paularmstrong.dev/posts/taking-a-break-from-open-source/) |
-| 2019 | [Patrick Steele-Idem](https://github.com/patrick-steele-idem) | morphdom | [Explains extended break from OSS in issue thread](https://github.com/patrick-steele-idem/morphdom/issues/176) |
-| 2018 | [Jamie Kyle](https://github.com/jamiebuilds) | Babel, Flow, Yarn | [*Dear JavaScript* — public burnout letter](https://dev.to/jamiebuilds/dear-javascript-5cp) |
-| 2018 | [Babel Core Team](https://github.com/babel) | Babel | ["We burnt out on the project" (public statement)](https://github.com/babel/babel/pull/5555#issuecomment-271266340) |
-| 2018 | [Feross](https://github.com/feross) | standard, WebTorrent | [Writes about failing funding experiment & maintainer fatigue](https://feross.org/funding-experiment/) |
+| 2021 | [Snowpack Team](https://github.com/snowpackjs) | Snowpack | [Project discontinued; maintainers discuss burnout pressures](https://astro.build/blog/astro-021-preview/) |
+| 2020 | [Amish Shah](https://github.com/amishshah) | discord.js | [Public gist announcing he is stepping down as owner of discord.js](https://gist.github.com/amishshah/a698edda631ce4082746f70481bf7ee4) |
+| 2019 | [Artem Sapegin](https://github.com/sapegin) | react-styleguidist | [Why I Quit Open Source](https://sapegin.me/blog/open-source-no-more/) |
+| 2019 | [Paul Armstrong](https://github.com/paularmstrong) | normalizr | [Requests maintainer help, later archives project](https://github.com/paularmstrong/normalizr/discussions/493) |
+| 2018 | [Jamie Kyle](https://github.com/jamiebuilds) | Babel, Flow, Yarn | [Dear JavaScript — public burnout letter](https://jamie.build/dear-javascript.html) |
+| 2018 | [Feross](https://github.com/feross) | standard, WebTorrent | [Writes about failing funding experiment & maintainer fatigue](https://feross.org/funding-experiment-recap/) |
 | 2017 | [Dominic Tarr](https://github.com/dominictarr) | event-stream | [Abandons module; explains he walked away from OSS](https://github.com/dominictarr/event-stream/issues/116#issuecomment-441702100) |
+| 2017 | [Anton Kovalyov](https://github.com/antonkovalyov) | JSHint | [Official blog post titled "Stepping down as a JSHint lead"](https://anton.medium.com/stepping-down-as-a-jshint-lead-8dcdf756e2d2) |
 | 2017 | [Jon Schlinkert](https://github.com/jonschlinkert) | Many JS utils | [Publishes "Staying Positive" burnout-prevention guide](https://github.com/jonschlinkert/maintainers-guide-to-staying-positive) |
-| 2017 | [Anton Kovalyov](https://github.com/antonkovalyov) | JSHint | [Steps down as JSHint lead](https://anton.kovalyov.net/blog/jshint-lead/) |
-| 2017 | [Vitaly Slobodin](https://github.com/Vitallium) | PhantomJS | [Official step-down; project effectively ends](https://groups.google.com/g/phantomjs/c/9aIamEUou5Q/m/5Z1eE8qGAwAJ) |
+| 2017 | [Vitaly Slobodin](https://github.com/Vitallium) | PhantomJS | [Public announcement stepping down as PhantomJS maintainer](https://groups.google.com/g/phantomjs/c/9aI5d-LDuNE) |
 | 2017 | [Nolan Lawson](https://github.com/nolanlawson) | PouchDB | [Foundational burnout essay](https://nolanlawson.com/2017/03/05/what-it-feels-like-to-be-an-open-source-maintainer/) |
-| 2016 | [Azer Koçulu](https://github.com/azer) | left-pad & 250+ npm pkgs | [Deleted all packages; quit npm ecosystem](https://medium.com/@azerbike/i-ve-just-liberated-my-modules-904f2f4e3f0c) |
-| 2016 | [TJ Holowaychuk](https://github.com/tj) | Express, Commander | ["Farewell Node.js" — announces exit](https://medium.com/@tjholowaychuk/farewell-node-js-4b2b7f52a0a) |
+| 2016 | [Azer Koçulu](https://github.com/azer) | left-pad & 250+ npm pkgs | [Writes post explaining why he quit npm and unpublished all modules](https://azerkoculu.com/posts/i-ve-just-liberated-my-modules) |
+| 2014 | [TJ Holowaychuk](https://github.com/tj) | Express, Commander | ["Farewell Node.js" — announces exit](https://medium.com/@tjholowaychuk/farewell-node-js-4ba9e7f3e52b) |

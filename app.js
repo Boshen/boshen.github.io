@@ -67,7 +67,7 @@ class BlogApp {
     const container = document.getElementById('app');
     container.innerHTML = `
       <h1>Boshen's Blog</h1>
-      <h2>Sponsors</h2>
+      <h2>My Sponsors</h2>
       <p align="center">
         <a href="https://github.com/sponsors/Boshen">
           <img src="https://cdn.jsdelivr.net/gh/boshen/sponsors/sponsors.svg" alt="My sponsors" />
@@ -118,6 +118,7 @@ class BlogApp {
         <h1>${post.title}</h1>
         <p class="post-date">${new Date(post.date).toLocaleDateString()}</p>
         <div id="post-content" class="post-content">${this.contentCache[slug]}</div>
+        <h2>My Sponsors</h2>
         <p align="center">
           <a href="https://github.com/sponsors/Boshen">
             <img src="https://cdn.jsdelivr.net/gh/boshen/sponsors/sponsors.svg" alt="My sponsors" />
@@ -130,6 +131,7 @@ class BlogApp {
         <h1>${post.title}</h1>
         <p class="post-date">${new Date(post.date).toLocaleDateString()}</p>
         <div id="post-content" class="post-content"></div>
+        <h2>My Sponsors</h2>
         <p align="center">
           <a href="https://github.com/sponsors/Boshen">
             <img src="https://cdn.jsdelivr.net/gh/boshen/sponsors/sponsors.svg" alt="My sponsors" />
