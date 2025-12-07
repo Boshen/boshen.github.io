@@ -66,12 +66,13 @@ class BlogApp {
   showPostList() {
     const container = document.getElementById('app');
     container.innerHTML = `
+      <h1>Boshen's Blog</h1>
+      <h2>Sponsors</h2>
       <p align="center">
         <a href="https://github.com/sponsors/Boshen">
           <img src="https://cdn.jsdelivr.net/gh/boshen/sponsors/sponsors.svg" alt="My sponsors" />
         </a>
       </p>
-      <h1>Boshen's Blog</h1>
       <div id="post-list"></div>
     `;
 
